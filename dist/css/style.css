@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+  marker: 0;
+  padding: 0;
+}
+body, html {
+  height: 100%;
+}
+
+.bg-image {
+  background-image: url("../image/studypic.jpg");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  
+  background-repeat: no-repeat;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+.login{
+  text-align: center;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 90%;
+  padding: 10px;
+  height: auto;
+  background-color: white;
+}
+
+@media only screen and (min-width: 600px) {
+  .login {
+    width: 30%;
+  }
+}
+
+.login h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  font-variant: inherit;
+  font-weight: 600;
+  color: brown;
+}
+.login img{
+  width: 200px;
+}
+#email{
+  width: 80%;
+  height: 60px;
+  margin-bottom: 40px;
+  padding: 0px 10px 0px 10px;
+  font-size: 1rem;
+}
+#password{
+  width: 80%;
+  height: 60px;
+  margin-bottom: 40px;
+  padding: 0px 10px 0px 10px;
+  font-size: 1rem;
+
+}
+
