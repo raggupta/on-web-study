@@ -6,15 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
     <link rel="stylesheet" href="./dist/css/style.css">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
+
 <body>
     <div class="bg-image"></div>
     <div class="login">
+        <form action="" method="post">
         <h1>Login</h1>
         <img src="dist/image/web-study.png" alt="web-study-image" srcset="dist/image/web-study.png">
         <input type="email" name="email" id="email" placeholder="Enter Your Email ID"><br>
         <input type="password" name="password" id="password" placeholder="Enter Password">
+        <button class="g-recaptcha"  data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit' data-action='submit' name="submit">Submit</button>
+    </form>
     </div>
 
+    <script>
+        function onSubmit(token) {
+            document.getElementById("demo-form").submit();
+        }
+    </script>
 </body>
+
 </html>
