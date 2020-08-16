@@ -12,12 +12,12 @@
 <body>
     <div class="bg-image"></div>
     <div class="login">
-        <form action="" method="post">
+        <form action="" method="post" id="login-form">
         <h1>Login</h1>
         <img src="dist/image/web-study.png" alt="web-study-image" srcset="dist/image/web-study.png">
         <input type="email" name="email" id="email" placeholder="Enter Your Email ID"><br>
         <input type="password" name="password" id="password" placeholder="Enter Password">
-        <button class="g-recaptcha"  data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit' id="submitbtn" data-action='submit' name="submit" style="padding: 10px;
+        <button class="g-recaptcha"  data-sitekey="6LcIrr8ZAAAAADvtu-urAJ_z1PAMOcp6llMATzLs" data-callback='onSubmit' id="submitbtn" data-action='submit' name="submit" style="padding: 10px;
         margin: auto;
         border-radius: 10px;
         background: maroon;
@@ -29,7 +29,7 @@
 
     <script>
         function onSubmit(token) {
-            document.getElementById("demo-form").submit();
+            document.getElementById("login-form").submit();
         }
     </script>
 </body>
