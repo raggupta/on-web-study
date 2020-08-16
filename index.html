@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
     <link rel="stylesheet" href="./dist/css/style.css">
-    <script src="https://www.google.com/recaptcha/api.js?render=6LcIrr8ZAAAAADvtu-urAJ_z1PAMOcp6llMATzLs"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body>
@@ -17,26 +17,18 @@
         <img src="dist/image/web-study.png" alt="web-study-image" srcset="dist/image/web-study.png">
         <input type="email" name="email" id="email" placeholder="Enter Your Email ID"><br>
         <input type="password" name="password" id="password" placeholder="Enter Password">
-        <button class="g-recaptcha"  data-sitekey="6LcIrr8ZAAAAADvtu-urAJ_z1PAMOcp6llMATzLs" data-callback='onSubmit' id="submitbtn" data-action='submit' name="submit" style="padding: 10px;
+        <div class="g-recaptcha" data-sitekey="6LcIrr8ZAAAAADvtu-urAJ_z1PAMOcp6llMATzLs"></div>
+        <br/>
+        <input type="submit" value="Submit" style="padding: 10px;
         margin: auto;
         border-radius: 10px;
         background: maroon;
         color: white;
         font-size: 1rem;
-        font-family: cursive;cursor: pointer;">Submit</button>
-    </form>
+        font-family: cursive;cursor: pointer;">
+        </form>
     </div>
 
-    <script>
-        function onClick(e) {
-          e.preventDefault();
-          grecaptcha.ready(function() {
-            grecaptcha.execute('6LcIrr8ZAAAAADvtu-urAJ_z1PAMOcp6llMATzLs', {action: 'submit'}).then(function(token) {
-                // Add your logic to submit to your backend server here.
-            });
-          });
-        }
-    </script>
 </body>
 
 </html>
